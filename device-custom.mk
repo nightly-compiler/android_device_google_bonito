@@ -109,6 +109,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Elmyra
 PRODUCT_PACKAGES += \
     ElmyraService
+    
+# NGA packages
+PRODUCT_PACKAGES += \
+    NgaResources \
+    nga
 
 # Now Playing
 PRODUCT_PACKAGES += \
