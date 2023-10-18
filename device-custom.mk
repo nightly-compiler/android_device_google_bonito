@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     libnos_datagram_citadel:64 \
     libnosprotos:64 \
     libnos_transport:64 \
-    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libpuresoftkeymasterdevice.vendor:64 \
     libsensorndkbridge:64 \
     libsoft_attestation_cert.vendor:64 \
@@ -153,3 +154,10 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fastbootd.available=true
+
+# VNDK prebuilts
+
+# Protobuf
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so 
