@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor:64 \
     android.hardware.rebootescrow-V1-ndk_platform.vendor:64
 
+# Identity
+PRODUCT_PACKAGES += \
+    android.hardware.identity-V5-ndk.vendor
+
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
@@ -145,6 +149,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Shims
 PRODUCT_PACKAGES += \
     lib-secureuishim
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0.vendor
 
 # RCS
 PRODUCT_PACKAGES += \
