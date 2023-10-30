@@ -13,5 +13,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_perf_diag
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/bonito/sepolicy/system_ext/private
 
 # Pixel-wide policy
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/ramdump/common
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
