@@ -146,10 +146,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno
 
-# Shims
-PRODUCT_PACKAGES += \
-    lib-secureuishim
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0.vendor
