@@ -75,9 +75,6 @@ $(call inherit-product, vendor/pb/config/common_full_phone.mk)
 include device/google/bonito/device-custom.mk
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bonito \
-    PRIVATE_BUILD_DESC="bonito-user 12 SP2A.220505.006 8561491 release-keys"
-
-BUILD_FINGERPRINT := google/bonito/bonito:12/SP2A.220505.006/8561491:user/release-keys
+    PRODUCT_NAME=bonito
 
 $(call inherit-product, vendor/google/bonito/bonito-vendor.mk)
