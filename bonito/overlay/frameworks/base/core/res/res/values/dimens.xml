@@ -19,4 +19,13 @@
 <resources>
     <!-- Padding around the status bar -->
     <dimen name="rounded_corner_content_padding">28px</dimen>
+
+    <!-- Height of quick settings tiles -->
+    <dimen name="qs_tile_height">76dp</dimen>
+
+    <!-- The height of the quick settings footer that holds the pagination dots and edit button -->
+    <dimen name="qs_footer_height">42dp</dimen>
+
+    <!-- Height of the media element in quick settings (portrait) -->
+    <dimen name="qs_media_session_height_expanded">171dp</dimen>
 </resources>
